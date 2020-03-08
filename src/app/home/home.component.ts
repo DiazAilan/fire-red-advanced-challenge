@@ -19,6 +19,6 @@ export class HomeComponent {
     }, {
         icon: 'help',
         title: 'Preguntas Frecuentes', 
-        path: '/FAQ'
+        path: '/fire-red-advanced-challenge/FAQ'
     }]
 }

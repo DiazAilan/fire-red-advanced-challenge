@@ -18,7 +18,7 @@ export class HomeComponent {
         path: 'http://download37.mediafire.com/3tcu2fghn3gg/188or8tpklvxqpd/Pokemon+Fire+Red+Advanced+Challenge.rar'
     }, {
         icon: 'help',
-        title: 'Preguntas Frecuentes',
-        path: '/fire-red-advanced-challenge/FAQ'
+        title: 'Preguntas Frecuentes', 
+        path: '/FAQ'
     }]
 }

@@ -1,0 +1,12 @@
+<div class="home-container">
+    <h2>Pokémon Fire Red Advanced Challenge (v1.0.0)</h2>
+    <p>Hack rom de Pokémon Fire Red que búsca crear un nuevo desafío para los amantes de Pokémon tanto competitivo como casuales.</p>
+    <div class="sections">
+        <a style="text-decoration: none;" *ngFor="let card of options" [attr.href]="card.path" class="option-card-wrapper">
+            <mat-card class="option-card">
+                <mat-icon>{{card.icon}}</mat-icon>
+                <h3>{{card.title}}</h3>
+            </mat-card>
+        </a>
+    </div>
+</div>

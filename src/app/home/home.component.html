@@ -1,0 +1,18 @@
+<div class="home-container">
+    <h2>¿De qué se trata esto?</h2>
+    <p><b>Pokémon Fire Red Advanced Challenge (v1.0.0)</b> es un Hack Rom de <b>Pokémon Fire Red</b> que búsca crear un nuevo desafío para los amantes de Pokémon tanto competitivo como casuales</p>
+    <h3><b>¡NUEVAS ESTRATEGIAS CON TUS POKEMON FAVORITOS!</b></h3>
+    <p>Cambios fueron introducidos para ayudar y dar viabilidad a todos esos Pokémon que no brillaron ni en <b>VGC</b> ni en <b>Smogon</b> mientras se procuraba mantener el balance del juego. La descripción en detalle de cada pokemon se puede ver en <a target="_blank" href="https://docs.google.com/spreadsheets/d/1g8JbU0yjGOU6aTgj-SxAT8SuOYyjhLglDRH1Yo18NPU?fbclid=IwAR0ctmevou_e2lr5GqUSMkZgRv_CJxMAG8BXgWMCKYXD3od86tfqUrzxlJk">este link</a></p>
+    <h3><b>¡COMBATES EPICOS!</b></h3>
+    <p>¿Cansado de ganar todo con un solo ataque? ¡Disfruta nuevas y muy desafiantes peleas dobles con nuevos movimientos y objetos contra tu Rival, Giovanni los Líderes de Gimnasio y el Alto Mando!</p>
+    <h3><b>¡ATRAPALOS A TODOS!</b></h3>
+    <p>Todos los Pokémon de Kanto son actualmente obtenibles, además de 10 de Johto sin necesidad de intercambiar.</p>
+    <div class="sections">
+        <a style="text-decoration: none;" *ngFor="let card of options" [attr.href]="card.path" class="option-card-wrapper">
+            <mat-card class="option-card">
+                <mat-icon>{{card.icon}}</mat-icon>
+                <h3>{{card.title}}</h3>
+            </mat-card>
+        </a>
+    </div>
+</div>

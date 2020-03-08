@@ -1,0 +1,103 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-frac: (
+    50 : #f6e0e0,
+    100 : #e8b3b3,
+    200 : #d98080,
+    300 : #c94d4d,
+    400 : #be2626,
+    500 : #b20000,
+    600 : #ab0000,
+    700 : #a20000,
+    800 : #990000,
+    900 : #8a0000,
+    A100 : #ffb6b6,
+    A200 : #ff8383,
+    A400 : #ff5050,
+    A700 : #ff3636,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-frac2: (
+    50 : #fef9eb,
+    100 : #fdf1cc,
+    200 : #fce8ab,
+    300 : #fbde89,
+    400 : #fad76f,
+    500 : #f9d056,
+    600 : #f8cb4f,
+    700 : #f7c445,
+    800 : #f6be3c,
+    900 : #f5b32b,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffeece,
+    A700 : #ffe5b4,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$fire-red-advanced-challenge-primary: mat-palette($md-frac);
+$fire-red-advanced-challenge-accent: mat-palette($md-frac2);
+
+$primary: #b20000;
+$secondary: #f9d056;
+
+// The warn palette is optional (defaults to red).
+$fire-red-advanced-challenge-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$fire-red-advanced-challenge-theme: mat-light-theme($fire-red-advanced-challenge-primary, $fire-red-advanced-challenge-accent, $fire-red-advanced-challenge-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($fire-red-advanced-challenge-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

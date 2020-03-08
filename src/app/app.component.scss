@@ -1,0 +1,40 @@
+@import "../styles.scss";
+
+$deep-0: #fff;
+$deep-1: #fafafa;
+$deep-2: #f5f5f5;
+$deep-3: #f0f0f0;
+
+:host {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .page-layout {
+        background: $deep-1;
+        height: 100%;
+        .sidenav-container {
+            background: $primary;
+            color: #fff;
+            padding: 16px;
+            .sidenav-title {
+                text-align: center;
+            }
+        }
+        mat-toolbar-row {
+            font-size: 16px;
+            .mat-icon-button {
+                color: #fff;
+                display: flex;
+                border: none;
+            }
+            a {
+                color: #fff;
+            }
+        }
+        .page-content {
+            padding: 12px 16px;
+        }
+    }
+}

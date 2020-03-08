@@ -5,10 +5,9 @@ import { FaqComponent } from './FAQ/faq.component';
 
 
 const routes: Routes = [
-  {path: 'FAQ', component: FaqComponent}, 
-  {path: '', component: HomeComponent},
-  {path: '**', redirectTo: '/'},
-
+  {path: 'fire-red-advanced-challenge/FAQ', component: FaqComponent}, 
+  {path: 'fire-red-advanced-challenge', component: HomeComponent},
+  {path: '**', redirectTo: '/fire-red-advanced-challenge'},
 ];
 
 @NgModule({
